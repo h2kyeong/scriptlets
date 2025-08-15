@@ -1,0 +1,152 @@
+#! /usr/bin/env python3
+
+'''
+Sleep until designated time
+by h2kyeong, 2025. 8. 15.
+released with MIT license terms
+'''
+
+import re
+import datetime
+
+def specific_time (time, reference):
+	match = re.match(r"^(\d{1,2}):(\d{1,2})(:(\d{1,2}))?\s*(am?|pm?)?$", time, re.IGNORECASE)
+	if not match:
+		raise ValueError("Invalid time format. Please use 'hh:mm'(24-hours), 'hh:mm am', or 'hh:mm pm'.")
+
+	hour, minute, _, second, suffix = match.groups()
+	if second is None: second = 0
+	hour, minute, second = int(hour), int(minute), int(second)
+
+	if suffix:
+		# When using AM/PM, the hour must be between 1 and 12.
+		if not (1 <= hour <= 12):
+			raise ValueError("Invalid hour for AM/PM format. Must be between 1 and 12.")
+
+		if suffix.lower()[0] == 'p' and hour != 12:
+			hour += 12
+		elif suffix.lower()[0] == 'a' and hour == 12:
+			# 12:xx AM is midnight in 24-hour format
+			hour = 0
+	else:
+		# If no suffix, assume 24-hour format
+		if not (0 <= hour <= 23):
+			raise ValueError("Invalid hour for 24-hour format. Must be between 0 and 23.")
+	
+	if not (0 <= minute <= 59):
+		raise ValueError("Invalid minute value. Must be 0-59.")
+
+	parsed_time = reference.replace(hour=hour, minute=minute, second=0, microsecond=0)
+	if parsed_time <= reference:
+		parsed_time += datetime.timedelta(days=1)
+	return parsed_time
+
+def relative_time (time):
+	# support multiple methods of calculating time delta
+	def single_unit (time):
+		match = re.match(r"^(\d+(\.\d+)?|\.\d+)([hmsd])?$", time, re.IGNORECASE)
+		if not match: return
+	
+		value, _, unit = match.groups()
+		value = float(value)
+
+		if unit is None or unit == 's':
+			time_delta = datetime.timedelta(seconds=value)
+		elif unit == 'h':
+			time_delta = datetime.timedelta(hours=value)
+		elif unit == 'm':
+			time_delta = datetime.timedelta(minutes=value)
+		elif unit == 'd':
+			time_delta = datetime.timedelta(days=value)
+		
+		return time_delta
+	
+	def colon_expr (time):
+		match = re.match(r"^(\d{1,2}):(\d{1,2})(:(\d{1,2}))?$", time, re.IGNORECASE)
+		if not match: return
+		
+		hours, minutes, _, seconds = match.groups()
+		if seconds is None: seconds = 0
+		hours, minutes, seconds = int(hours), int(minutes), int(seconds)
+		
+		if not (0 <= minutes <= 59 and 0 <= seconds <= 59):
+			raise ValueError("Invalid time values for hh:mm or hh:mm:ss format.")
+		
+		return datetime.timedelta(hours=hours, minutes=minutes, seconds=seconds)
+	
+	now = datetime.datetime.now()
+	return single_unit(time) or colon_expr(time)
+
+def arg_parser ():
+	import argparse
+	
+	parser = argparse.ArgumentParser(
+		description="Parses a time expression from the command line and wait up to that time.",
+		epilog="Examples: sleepy -at 3:30 pm | sleepy -after 2h"
+	)
+
+	group = parser.add_mutually_exclusive_group(required=True)
+
+	# nargs because am/pm after space will make multiple arguments
+	group.add_argument(
+		'-at',
+		metavar='H:MM',
+		nargs='+',
+		type=str,
+		help="A specific time of day in hh:mm. (e.g., 3:30pm or 15:30). If the time has passed today, it will be set for the next day."
+	)
+	group.add_argument(
+		'-after',
+		metavar='TIME_DELTA',
+		type=str,
+		help="A relative time expression from the current time (e.g., 30m, 2.2h, .1d, hh:mm(:ss))."
+	)
+	group.add_argument(
+		'-iso',
+		metavar='ISO_STRING',
+		type=str,
+		help="An ISO 8601 timestamp (e.g., '2033-10-27T10:30:00')."
+	)
+	return parser
+
+def parse_time (*argv):
+	parser = arg_parser()
+	args, remaining = parser.parse_known_args(argv)
+	now = datetime.datetime.now()
+	try:
+		if args.at:
+			parsed_time = specific_time(' '.join(args.at), now)
+			time_delta = parsed_time - now
+
+		elif args.after:
+			time_delta = relative_time(args.after)
+			if time_delta is None:
+				raise ValueError("Invalid format. Please use Nm, Nh, or Nd.")
+			parsed_time = now + time_delta
+			
+		elif args.iso:
+			# Use standard library fromisoformat() to parse.
+			parsed_time = datetime.datetime.fromisoformat(args.iso)
+			time_delta = parsed_time - now
+		
+		print(f"Time Delta: {time_delta}")
+		print(f"Current    time: {now}")
+		print(f"Designated time: {parsed_time}")
+		return time_delta
+	
+	except ValueError as e:
+		# Catch a ValueError from parsing and print a user-friendly error message.
+		print(f"Error: {e}")
+		parser.print_help()
+	except Exception as e:
+		print(f"An unexpected error occurred: {e}")
+		parser.print_help()
+
+
+if __name__ == "__main__":
+	import sys
+	time_delta = parse_time(*sys.argv[1:])
+	if time_delta is None: raise ValueError()
+	
+	import time
+	time.sleep(time_delta.total_seconds())
