@@ -15,11 +15,7 @@ def generic_insert (storage, item):
 
 import re
 
-rx_remove_whitespace = re.compile(r'^\s*(.+?)\s*$')
 rx_post_url = re.compile(r'/r/([^/]+)/comments/([^/]+)/')
-
-def remove_whitespace (s):
-	return rx_remove_whitespace.match(s).group(1)
 
 
 from lxml import etree
