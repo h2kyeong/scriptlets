@@ -11,9 +11,9 @@ def calculate_ratings (matches, num_candidates, l2_reg=1e-4):
 	
 	def negative_log_likelihood (ratings):
 		diff = ratings[idx1] - ratings[idx2]
-		log_p1 = -np.log1p(np.exp(-diff))
-		log_p0 = -np.log1p(np.exp( diff))
-		nll = -np.sum(scores * log_p1 + (1 - scores) * log_p0)
+		log_p1 = np.log1p(np.exp(-diff))
+		log_p0 = np.log1p(np.exp( diff))
+		nll = np.sum(scores * log_p1 + (1 - scores) * log_p0)
 		
 		# Add small L2 regularization to handle scale/translation invariance
 		reg_penalty = l2_reg * np.sum(ratings**2)
@@ -67,21 +67,19 @@ def compare (ans1, ans2):
 		"{{[INPUT]}}<attachement name='original'>", document,
 		"</attachment>Above is a transcript. Divide time ranges by topic and name subheadings. Insert brief summary under each subheading.{{[OUTPUT]}}",
 		"{{[INPUT]}}",
-		"Above is a transcript and two summaries A and B. Name the better summary and explain why. The most important quality of an excellent summary is presenting the core message that is unique to the video.",
 		"<attachment name='Summary A'>", ans1, "</attachment>",
 		"<attachment name='Summary B'>", ans2, "</attachment>",
+		"Above is a transcript and two summaries A and B. Name the better summary. The most important quality of an excellent summary is presenting the core message that is unique to the video. No explanation is required.",
 		"{{[OUTPUT]}}"
 	]
 	ans, done, ctx = generate(''.join(ar))
 	i1 = ans.find('Summary A')
 	i2 = ans.find('Summary B')
 	# assume winner is mentioned first. 1 if A wins
-	if i1 < 0:
-		if i2 < 0: return
-		else: return 0
-	else:
-		if i2 < 0: return 1
-		else: return 1 if i1 < i2 else 0
+	if i1 < 0: return 0
+	if i2 < 0: return 1
+	return 1 if i1 < i2 else 0
+
 
 def transcript_summary ():
 	ar = [
@@ -90,17 +88,21 @@ def transcript_summary ():
 	]
 	cand = []
 	for i in range(num_gen):
+		print('generating', i)
 		ans, done, ctx = generate(''.join(ar))
 		cand.append(ans)
 	
 	scores = []
 	for i in range(num_gen-1):
+		print('comparing', i)
 		for j in range(i+1, num_gen):
-			v = None
-			while True:
-				v = compare(cand[i], cand[j])
-				if v is not None: break
-			scores.append(( i, j, v ))
+			for k in range(2):
+				scores.append(( i, j, compare(cand[i], cand[j]) ))
+	for i in range(num_gen-1, 1, -1):
+		print('comparing back', i)
+		for j in range(i-1, 0, -1):
+			for k in range(2):
+				scores.append(( i, j, compare(cand[i], cand[j]) ))
 	
 	ratings = [ (r, i) for i, r in enumerate(calculate_ratings(scores, num_gen)) ]
 	ratings.sort(reverse=True)
