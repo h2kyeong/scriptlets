@@ -62,73 +62,60 @@ def generate (prompt):
 		if 'done' in x: done = done | x['done']
 	return (''.join(ar), done, ctx)
 
-document = '''\
-Intro
-0:00
-Inflation inflation.
-0:02
-Every single metric is saying that
-...
-23:45
-video next and get this video to 10,000
-23:47
-likes. Thanks.
-'''
+def compare (ans1, ans2):
+	ar = [
+		"{{[INPUT]}}<attachement name='original'>", document,
+		"</attachment>Above is a transcript. Divide time ranges by topic and name subheadings. Insert brief summary under each subheading.{{[OUTPUT]}}",
+		"{{[INPUT]}}",
+		"Above is a transcript and two summaries A and B. Name the better summary and explain why. The most important quality of an excellent summary is presenting the core message that is unique to the video.",
+		"<attachment name='Summary A'>", ans1, "</attachment>",
+		"<attachment name='Summary B'>", ans2, "</attachment>",
+		"{{[OUTPUT]}}"
+	]
+	ans, done, ctx = generate(''.join(ar))
+	i1 = ans.find('Summary A')
+	i2 = ans.find('Summary B')
+	# assume winner is mentioned first. 1 if A wins
+	if i1 < 0:
+		if i2 < 0: return
+		else: return 0
+	else:
+		if i2 < 0: return 1
+		else: return 1 if i1 < i2 else 0
 
-def make_candidates ():
+def transcript_summary ():
 	ar = [
 		"{{[INPUT]}}<attachement name='original'>", document,
 		"</attachment>Above is a transcript. Divide time ranges by topic and name subheadings. Insert brief summary under each subheading.{{[OUTPUT]}}"
 	]
-	with open('candidates.txt', 'w', encoding='utf-8', newline='\n') as f:
-		for i in range(10):
-			ans, done, ctx = generate(''.join(ar))
-			f.write(repr(( ans, done, [] )))
-			f.write('\n')
-
-def make_matches ():
-	def match (ans1, ans2):
-		ar = [
-			"{{[INPUT]}}<attachement name='original'>", document,
-			"</attachment>Above is a transcript. Divide time ranges by topic and name subheadings. Insert brief summary under each subheading.{{[OUTPUT]}}",
-			"{{[INPUT]}}",
-			"Above is a transcript and two summaries A and B. Name the better summary and explain why. The most important quality of an excellent summary is presenting the core message that is unique to the video.",
-			"<attachment name='Summary A'>", ans1, "</attachment>",
-			"<attachment name='Summary B'>", ans2, "</attachment>",
-			"{{[OUTPUT]}}"
-		]
+	cand = []
+	for i in range(num_gen):
 		ans, done, ctx = generate(''.join(ar))
-		i1 = ans.find('Summary A')
-		i2 = ans.find('Summary B')
-		# assume winner is mentioned first. 1 if A wins
-		if i1 < 0:
-			if i2 < 0: return
-			else: return 0
-		else:
-			if i2 < 0: return 1
-			else: return 1 if i1 < i2 else 0
-		
-	with open('candidates.txt', 'r', encoding='utf-8', newline='\n') as f:
-		cand = [ ans for ans, done, ctx in map(eval, f) ]
-	with open('matches.txt', 'w', encoding='utf-8', newline='\n') as f:
-		for i in range(10-1):
-			for j in range(i+1, 10):
-				f.write(repr(( i, j, match(cand[i], cand[j]) )))
-				f.write('\n')
-
-def test ():
-	make_candidates()
-	make_matches()
-	from bradley_terry import calculate_ratings
-	with open('matches.txt', 'r', encoding='utf-8', newline='\n') as f:
-		scores = list(map(eval, f))
-	ratings = [ (r, i) for i, r in enumerate(calculate_ratings(scores, 10)) ]
+		cand.append(ans)
+	
+	scores = []
+	for i in range(num_gen-1):
+		for j in range(i+1, num_gen):
+			v = None
+			while True:
+				v = compare(cand[i], cand[j])
+				if v is not None: break
+			scores.append(( i, j, v ))
+	
+	ratings = [ (r, i) for i, r in enumerate(calculate_ratings(scores, num_gen)) ]
 	ratings.sort(reverse=True)
-	with open('candidates.txt', 'r', encoding='utf-8', newline='\n') as f:
-		cand = [ ans for ans, done, ctx in map(eval, f) ]
+	
 	with open('o.txt', 'w', encoding='utf-8', newline='\n') as f:
 		for r, i in ratings:
 			print((round(float(r), 4), i), file=f)
 			print(cand[i], file=f)
+			f.write('\n'*2)
 
-test()
+import sys
+
+num_gen = 10
+
+with open(sys.argv[1], 'r', encoding='utf-8', newline='\n') as f:
+	document = f.read()
+
+transcript_summary()
