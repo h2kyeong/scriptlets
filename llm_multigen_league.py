@@ -42,7 +42,7 @@ def calculate_ratings (matches, num_candidates, l2_reg=1e-4):
 
 import json
 
-prompt_base = {"max_context_length": 32768, "max_length": 4096, "rep_pen": 1, "temperature": 1, "top_p": 0.95, "top_k": 64, "top_a": 0, "typical": 1, "tfs": 1, "rep_pen_range": 360, "rep_pen_slope": 0.7, "sampler_order": [6, 0, 1, 3, 4, 2, 5], "memory": "", "trim_stop": True, "genkey": "KCPP4606", "min_p": 0, "dynatemp_range": 0, "dynatemp_exponent": 1, "smoothing_factor": 0, "smoothing_curve": 1, "nsigma": 0, "banned_tokens": [], "render_special": False, "logprobs": False, "replace_instruct_placeholders": True, "presence_penalty": 0, "logit_bias": {}, "adaptive_target": -1, "adaptive_decay": 0.9, "stop_sequence": ["{{[INPUT]}}", "{{[OUTPUT]}}"], "use_default_badwordsids": False, "bypass_eos": False, "prompt": "{{[INPUT]}}guten tag!{{[OUTPUT]}}"}
+prompt_base = {"max_context_length": 130172, "max_length": 4096, "rep_pen": 1, "temperature": 1, "top_p": 0.95, "top_k": 64, "top_a": 0, "typical": 1, "tfs": 1, "rep_pen_range": 360, "rep_pen_slope": 0.7, "sampler_order": [6, 0, 1, 3, 4, 2, 5], "memory": "", "trim_stop": True, "genkey": "KCPP4606", "min_p": 0, "dynatemp_range": 0, "dynatemp_exponent": 1, "smoothing_factor": 0, "smoothing_curve": 1, "nsigma": 0, "banned_tokens": [], "render_special": False, "logprobs": False, "replace_instruct_placeholders": True, "presence_penalty": 0, "logit_bias": {}, "adaptive_target": -1, "adaptive_decay": 0.9, "stop_sequence": ["{{[INPUT]}}", "{{[OUTPUT]}}"], "use_default_badwordsids": False, "bypass_eos": False, "prompt": "{{[INPUT]}}guten tag!{{[OUTPUT]}}"}
 
 def generate (prompt):
 	from urllib.request import Request, urlopen
@@ -141,15 +141,17 @@ def slim_srt (ar):
 		except StopIteration: break
 	return '\n'.join(res)
 
-import sys
+num_gen = 7
 
-num_gen = 10
-fn_in = sys.argv[1]
-fn_out = fn_in+'.md'
+import sys, os
+for fn_in in sys.argv[1:]:
+	fn_out = fn_in+'.md'
 
-with open(fn_in, 'r', encoding='utf-8', newline='\n') as f:
-	document = f.read()
-	if fn_in.endswith('.srt'):
-		document = slim_srt(document.splitlines())
+	if os.path.exists(fn_out): continue
 
-transcript_summary()
+	with open(fn_in, 'r', encoding='utf-8', newline='\n') as f:
+		document = f.read()
+		if fn_in.endswith('.srt'):
+			document = slim_srt(document.splitlines())
+
+	transcript_summary()
