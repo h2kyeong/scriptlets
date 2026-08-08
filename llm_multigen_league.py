@@ -107,17 +107,49 @@ def transcript_summary ():
 	ratings = [ (r, i) for i, r in enumerate(calculate_ratings(scores, num_gen)) ]
 	ratings.sort(reverse=True)
 	
-	with open('o.txt', 'w', encoding='utf-8', newline='\n') as f:
+	with open(fn_out, 'w', encoding='utf-8', newline='\n') as f:
 		for r, i in ratings:
 			print((round(float(r), 4), i), file=f)
 			print(cand[i], file=f)
 			f.write('\n'*2)
 
+def slim_srt (ar):
+	def bite ():
+		while True:
+			n = next(ar)
+			if len(n): break
+		t = next(ar)
+		t = t[:t.index(' -->')]
+		# guarantee one line
+		w = [next(ar)]
+		while True:
+			w.append(next(ar))
+			if not w[-1]: break
+		return [n, t, w]
+	res = []
+	ar = map(str.strip, ar)
+	prev = None
+	while True:
+		try:
+			curr = bite()
+			if prev is not None:
+				curr[-1] = [ x for x in curr[-1] if len(x) and x not in prev[-1] ]
+			if not curr[-1]: continue
+			res.append(curr[1])
+			res.extend(curr[-1])
+			prev = curr
+		except StopIteration: break
+	return '\n'.join(res)
+
 import sys
 
 num_gen = 10
+fn_in = sys.argv[1]
+fn_out = fn_in+'.md'
 
-with open(sys.argv[1], 'r', encoding='utf-8', newline='\n') as f:
+with open(fn_in, 'r', encoding='utf-8', newline='\n') as f:
 	document = f.read()
+	if fn_in.endswith('.srt'):
+		document = slim_srt(document.splitlines())
 
 transcript_summary()
