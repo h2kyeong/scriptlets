@@ -98,9 +98,9 @@ def transcript_summary ():
 		for j in range(i+1, num_gen):
 			for k in range(2):
 				scores.append(( i, j, compare(cand[i], cand[j]) ))
-	for i in range(num_gen-1, 1, -1):
+	for i in range(num_gen-1, 0, -1):
 		print('comparing back', i)
-		for j in range(i-1, 0, -1):
+		for j in range(i-1, -1, -1):
 			for k in range(2):
 				scores.append(( i, j, compare(cand[i], cand[j]) ))
 	
