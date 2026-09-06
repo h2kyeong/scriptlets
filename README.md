@@ -1,8 +1,15 @@
-### Small but useful command-line scripts
+# Small but useful command-line scripts
 Great also for learning to program
 
 ### sleepy
 sleep until designated time. supports a wide variety of formats.
+
+# 3D print projects
+
+### button pedalboard
+- Organ pedal board (not guitar effectors)
+- Housing for arcade buttons with 3cm diameter
+- Connect to Teensy board for easy MIDI setup
 
 ### polycubes
 - Geometry nodes to create 3D printable polycube blocks.
