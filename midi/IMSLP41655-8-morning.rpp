@@ -1,0 +1,1570 @@
+<REAPER_PROJECT 0.1 "7.73/win64" 1791517620 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 128
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 1.77467538229466
+  ZOOM 20.62032094171133 0 0
+  VZOOMEX 10 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  RENDER_FMT 0 2 0
+  RENDER_1X 0
+  RENDER_RANGE 1 0 0 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 44100 0 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 101.427 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 101.74805525156023 101.74805525156023
+  SELECTION2 101.74805525156023 101.74805525156023
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {56C22160-1BAE-43CB-9233-FB16E83857C5}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {E3B52D77-0F0B-4AB4-80E4-EEAD9D8DE6F9}
+    ACT 0 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  <PROJBAY
+  >
+  <TRACK {2C9C5436-C7E4-400F-B96D-6710A39E9B66}
+    NAME ch1A
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {2C9C5436-C7E4-400F-B96D-6710A39E9B66}
+    PERF 0
+    MIDIOUT 33
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 963 580 876 1008
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaControlMIDI (Cockos)" reacontrolmidi.dll 0 "" 1919118692<56535472636D64726561636F6E74726F> ""
+        ZG1jcu5e7f4AAAAAAAAAANMAAAABAAAAAAAQAA==
+        /////wAAAAAAAAAAAAAAAAkAAAAMAAAAAQAAAP8/AAAAIAAAACAAAAAAAAAiAAAATzpcc29mdHdhcmVcUkVBUEVSXERhdGFcR00ucmVhYmFuawAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAABgAAAE1ham9yAA0AAAAxMDIwMzQwNTA2MDcAAQAAAAAAAAAAAAAAAAoAAAAN
+        AAAAAQAAAAAAAAAAAAAAAAAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C7047C88-9306-497C-ADFD-5A3651F2B01D}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0.32227049333196
+      SNAPOFFS 0
+      LENGTH 29.57792303824426
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 1
+      IGUID {BC39D097-D366-42F9-8E79-C3182EB80463}
+      IID 102
+      NAME "2026-10-08-00-51-57.275.mid [chan 3]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EE78612C-E38E-4B8C-84DF-DF47328583FB}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {3C62B9EE-AF34-46C0-AAA8-FBC954D63C00}
+        E 26 92 41 36
+        E 9 82 41 00
+        E 0 92 4d 3e
+        E 8 82 4d 00
+        E 0 92 4a 39
+        E 9 82 4a 00
+        E 0 92 48 35
+        E 16 92 3e 2c
+        E 8 92 46 3d
+        E 1 82 48 00
+        E 7 82 3e 00
+        E 1 82 46 00
+        E 0 92 41 3c
+        E 0 92 45 3e
+        E 8 82 45 00
+        E 0 92 46 47
+        E 6 82 41 00
+        E 1 82 46 00
+        E 1 92 41 2b
+        E 0 92 4a 44
+        E 1 92 44 42
+        E 14 82 41 00
+        E 0 82 4a 00
+        E 1 82 44 00
+        E 1 92 43 36
+        E 0 92 48 43
+        E 1 92 3f 43
+        E 5 82 3f 00
+        E 1 82 43 00
+        E 1 82 48 00
+        E 1 92 43 32
+        E 7 82 43 00
+        E 1 92 4f 46
+        E 8 82 4f 00
+        E 0 92 4b 42
+        E 9 82 4b 00
+        E 0 92 4a 40
+        E 17 92 3f 3b
+        E 9 82 4a 00
+        E 0 92 48 39
+        E 8 82 48 00
+        E 0 92 47 3e
+        E 9 82 47 00
+        E 0 92 48 46
+        E 6 82 3f 00
+        E 0 82 48 00
+        E 2 92 3f 34
+        E 0 92 41 3d
+        E 16 82 3f 00
+        E 0 92 3e 36
+        E 8 82 3e 00
+        E 1 82 41 00
+        E 0 92 4a 43
+        E 8 82 4a 00
+        E 0 92 3e 37
+        E 0 92 46 40
+        E 8 82 46 00
+        E 0 92 43 43
+        E 7 82 3e 00
+        E 1 82 43 00
+        E 1 92 3d 3c
+        E 0 92 41 3d
+        E 8 82 41 00
+        E 0 92 40 3d
+        E 8 82 3d 00
+        E 0 82 40 00
+        E 0 92 3e 4c
+        E 7 82 3e 00
+        E 1 92 4d 49
+        E 8 82 4d 00
+        E 0 92 41 39
+        E 0 92 4a 3d
+        E 9 82 4a 00
+        E 0 92 46 3c
+        E 6 82 41 00
+        E 1 82 46 00
+        E 1 92 40 47
+        E 1 92 45 3c
+        E 7 82 45 00
+        E 0 92 43 3e
+        E 7 82 40 00
+        E 1 92 41 47
+        E 1 82 43 00
+        E 6 82 41 00
+        E 2 92 51 47
+        E 5 82 51 00
+        E 2 92 41 42
+        E 1 92 4d 30
+        E 7 82 4d 00
+        E 1 92 4a 36
+        E 8 92 48 44
+        E 1 82 4a 00
+        E 8 82 41 00
+        E 0 82 48 00
+        E 0 92 4a 42
+        E 0 92 45 35
+        E 8 82 4a 00
+        E 0 82 45 00
+        E 0 92 4c 3d
+        E 0 92 43 42
+        E 6 82 43 00
+        E 2 92 41 4e
+        E 0 92 4d 4c
+        E 1 82 4c 00
+        E 5 82 41 00
+        E 0 82 4d 00
+        E 3 92 3e 3b
+        E 0 92 46 40
+        E 7 82 3e 00
+        E 1 82 46 00
+        E 0 92 40 34
+        E 0 92 43 47
+        E 8 82 40 00
+        E 1 82 43 00
+        E 0 92 41 39
+        E 25 82 41 00
+        E 53 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {91DC48E1-3EC7-4A5F-904C-121C48EA0ECF}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 435
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        VELLANE -1 125 0 0 1
+        CFGEDITVIEW 0 2.135417 46 12 0 0 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 0
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 191 1199 3240 2231 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-00-51-57.275.mid"
+      >
+    >
+    <ITEM
+      POSITION 24.69909069637495
+      SNAPOFFS 0
+      LENGTH 28.39480611671448
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {1B0635F9-5037-437B-B375-982DF153F0BD}
+      IID 162
+      NAME "2026-10-08-05-42-30.459.mid [chan 3]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BF511A60-3110-4E4E-899A-01E24F047E5A}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {8FC125E4-D9D0-4C3F-B9FA-FD073D6960D6}
+        E 37 92 48 3c
+        E 7 92 4a 2f
+        E 1 82 48 00
+        E 7 92 4b 36
+        E 1 82 4a 00
+        E 7 82 4b 00
+        E 0 92 52 34
+        E 22 82 52 00
+        E 0 92 4f 35
+        E 7 92 4d 42
+        E 1 82 4f 00
+        E 7 82 4d 00
+        E 0 92 4b 44
+        E 7 92 4a 38
+        E 1 82 4b 00
+        E 15 82 4a 00
+        E 0 92 48 44
+        E 5 82 48 00
+        E 3 92 48 3d
+        E 7 92 4a 3e
+        E 1 82 48 00
+        E 6 92 4b 42
+        E 1 82 4a 00
+        E 7 82 4b 00
+        E 0 92 4f 3d
+        E 21 92 4b 3c
+        E 1 82 4f 00
+        E 7 82 4b 00
+        E 0 92 4a 39
+        E 7 82 4a 00
+        E 1 92 48 3e
+        E 7 92 46 43
+        E 1 82 48 00
+        E 13 82 46 00
+        E 1 92 45 42
+        E 5 82 45 00
+        E 2 92 45 2a
+        E 8 82 45 00
+        E 0 92 44 3c
+        E 7 82 44 00
+        E 0 92 45 43
+        E 8 92 48 42
+        E 1 82 45 00
+        E 14 92 3e 3e
+        E 8 92 46 40
+        E 1 82 48 00
+        E 7 82 46 00
+        E 0 92 45 3d
+        E 7 82 45 00
+        E 0 92 43 3d
+        E 7 92 41 3d
+        E 1 82 43 00
+        E 6 92 42 47
+        E 1 82 41 00
+        E 7 82 42 00
+        E 0 92 44 44
+        E 1 82 3e 00
+        E 6 82 44 00
+        E 1 92 45 47
+        E 7 82 45 00
+        E 0 92 4a 47
+        E 7 82 4a 00
+        E 0 92 4e 3e
+        E 8 82 4e 00
+        E 0 92 51 46
+        E 24 82 51 00
+        E 108 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {81465B69-E9DD-4647-B793-6E6AA4796677}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 649
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        VELLANE -1 125 0 0 1
+        CFGEDITVIEW 0 2.223427 45 12 0 0 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 0
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 191 1199 3240 2231 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-05-42-30.459.mid"
+      >
+    >
+    <ITEM
+      POSITION 44.61567019254007
+      SNAPOFFS 0
+      LENGTH 17.47385118797222
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {95C91991-626A-4E4E-BDB0-E033A0F7531A}
+      IID 162
+      NAME "2026-10-08-05-42-30.459.mid [chan 3]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D4B64C43-94F6-44FE-9751-EB5972CABF26}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {CFB9BC5E-5488-4035-A9BC-1F328DCF6731}
+        E 21 92 43 38
+        E 8 92 4f 46
+        E 8 82 4f 00
+        E 0 92 4e 4b
+        E 7 82 4e 00
+        E 0 92 4c 47
+        E 8 82 4c 00
+        E 0 92 4a 3b
+        E 15 82 43 00
+        E 1 92 42 47
+        E 6 82 4a 00
+        E 2 92 4a 32
+        E 6 82 4a 00
+        E 0 92 4d 4f
+        E 1 92 4b 3c
+        E 2 82 4d 00
+        E 5 82 4b 00
+        E 0 92 4a 3e
+        E 7 82 42 00
+        E 1 92 43 36
+        E 0 92 4f 40
+        E 1 82 4a 00
+        E 7 82 43 00
+        E 0 92 46 49
+        E 7 92 45 46
+        E 1 82 46 00
+        E 7 82 4f 00
+        E 0 92 4a 40
+        E 0 92 43 32
+        E 1 82 45 00
+        E 4 82 43 00
+        E 1 82 4a 00
+        E 2 92 48 49
+        E 0 92 40 42
+        E 5 82 40 00
+        E 1 92 46 44
+        E 1 82 48 00
+        E 0 92 3d 43
+        E 9 82 46 00
+        E 0 82 3d 00
+        E 0 92 3e 3d
+        E 0 92 45 2e
+        E 8 82 3e 00
+        E 0 92 40 39
+        E 7 82 40 00
+        E 0 92 41 36
+        E 8 82 45 00
+        E 0 82 41 00
+        E 0 92 42 34
+        E 0 92 4a 3e
+        E 6 82 42 00
+        E 1 82 4a 00
+        E 1 92 43 32
+        E 0 92 4b 2a
+        E 6 82 43 00
+        E 0 82 4b 00
+        E 1 92 4a 2f
+        E 1 92 45 26
+        E 7 82 4a 00
+        E 0 82 45 00
+        E 0 92 46 38
+        E 0 92 4f 3b
+        E 8 82 46 00
+        E 0 92 45 3d
+        E 7 92 46 4f
+        E 1 82 45 00
+        E 5 82 4f 00
+        E 2 92 43 49
+        E 0 92 4a 3d
+        E 1 82 46 00
+        E 4 82 43 00
+        E 0 82 4a 00
+        E 2 92 40 49
+        E 0 92 48 43
+        E 5 82 40 00
+        E 2 82 48 00
+        E 1 92 3d 47
+        E 0 92 43 39
+        E 0 92 46 37
+        E 7 82 3d 00
+        E 0 82 43 00
+        E 1 82 46 00
+        E 0 92 3e 3b
+        E 0 92 45 3d
+        E 0 92 42 42
+        E 8 82 42 00
+        E 0 92 41 47
+        E 7 82 41 00
+        E 1 92 40 40
+        E 1 82 3e 00
+        E 18 82 40 00
+        E 1 82 45 00
+        E 11 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {4A5ED117-8B07-422F-B9DA-7CC5158DE4EE}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 651
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        VELLANE -1 125 0 0 1
+        CFGEDITVIEW 0 3.754579 46 12 0 0 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 0
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 191 1199 3240 2231 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-05-42-30.459.mid"
+      >
+    >
+    <ITEM
+      POSITION 62.08952138051229
+      SNAPOFFS 0
+      LENGTH 26.62013073441984
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {6DF6EC06-780F-41CC-A08D-AEBEF26A3128}
+      IID 247
+      NAME "2026-10-09-02-49-45.197.mid [chan 3]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {52584FF1-16CA-4005-AEA8-CE67F7CA8213}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {4786B901-7B90-4465-A113-BECC93CCDC02}
+        E 1 92 41 39
+        E 8 82 41 00
+        E 0 92 4d 39
+        E 7 82 4d 00
+        E 0 92 4a 38
+        E 7 82 4a 00
+        E 1 92 48 47
+        E 0 92 3e 42
+        E 8 82 3e 00
+        E 0 92 3f 49
+        E 7 82 3f 00
+        E 0 92 40 47
+        E 8 82 48 00
+        E 0 92 46 44
+        E 7 82 40 00
+        E 0 82 46 00
+        E 0 92 41 3e
+        E 0 92 45 47
+        E 7 82 45 00
+        E 0 92 46 42
+        E 8 82 46 00
+        E 0 92 44 43
+        E 0 92 4a 4a
+        E 12 82 41 00
+        E 0 82 44 00
+        E 0 82 4a 00
+        E 2 92 48 42
+        E 0 92 43 3b
+        E 1 92 3f 3d
+        E 5 82 3f 00
+        E 1 82 43 00
+        E 1 92 43 46
+        E 1 82 48 00
+        E 7 82 43 00
+        E 0 92 4f 4b
+        E 7 82 4f 00
+        E 0 92 4b 42
+        E 8 82 4b 00
+        E 0 92 4a 35
+        E 15 92 3f 4a
+        E 8 82 4a 00
+        E 0 92 48 3d
+        E 7 82 48 00
+        E 0 92 47 43
+        E 7 92 48 40
+        E 1 82 47 00
+        E 7 82 48 00
+        E 0 92 41 40
+        E 14 82 3f 00
+        E 0 92 3e 46
+        E 18 82 3e 00
+        E 1 82 41 00
+        E 9 92 4b 38
+        E 7 82 4b 00
+        E 0 92 3f 40
+        E 0 92 48 39
+        E 7 82 48 00
+        E 0 92 44 39
+        E 7 82 3f 00
+        E 0 82 44 00
+        E 0 92 3e 43
+        E 0 92 43 43
+        E 8 82 43 00
+        E 0 92 41 3b
+        E 7 92 3f 47
+        E 1 82 3e 00
+        E 0 82 41 00
+        E 5 82 3f 00
+        E 2 92 4f 50
+        E 7 82 4f 00
+        E 0 92 43 32
+        E 0 92 4b 44
+        E 7 92 48 43
+        E 1 82 4b 00
+        E 7 82 43 00
+        E 0 82 48 00
+        E 0 92 46 49
+        E 0 92 42 42
+        E 7 82 46 00
+        E 0 92 45 42
+        E 7 82 42 00
+        E 0 82 45 00
+        E 0 92 43 44
+        E 6 82 43 00
+        E 2 92 56 4c
+        E 4 82 56 00
+        E 3 92 52 39
+        E 1 92 46 49
+        E 7 92 4f 3b
+        E 1 82 52 00
+        E 6 82 4f 00
+        E 0 92 4d 3c
+        E 6 82 46 00
+        E 1 82 4d 00
+        E 0 92 4f 42
+        E 1 92 4a 36
+        E 6 82 4a 00
+        E 1 82 4f 00
+        E 0 92 51 42
+        E 1 92 48 4e
+        E 4 82 51 00
+        E 0 82 48 00
+        E 3 92 52 40
+        E 0 92 46 49
+        E 5 82 52 00
+        E 0 82 46 00
+        E 93 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {9ABA9D54-A7E4-47E9-BBC3-90B617CE5FB9}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1006
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-09-02-49-45.197.mid"
+      >
+    >
+    <ITEM
+      POSITION 82.88528456203686
+      SNAPOFFS 0
+      LENGTH 17.74675382294654
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {C79F6A8F-2855-4629-9C5B-26CDEE279427}
+      IID 257
+      NAME "2026-10-09-03-15-40.260.mid [chan 3]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6E6853D9-FC92-47CD-92A2-85118E7F8D3A}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {123BEE49-F057-4C5F-B836-44DF4DD8C1F1}
+        e 4 92 43 44
+        e 1 92 4b 43
+        e 5 82 43 00
+        e 2 82 4b 00
+        e 0 92 48 3c
+        e 0 92 41 32
+        e 7 82 48 00
+        e 0 92 46 49
+        e 18 82 41 00
+        e 1 82 46 00
+        E 4 92 46 43
+        E 6 92 48 46
+        E 1 82 46 00
+        E 0 92 41 38
+        E 7 82 48 00
+        E 0 92 4a 3e
+        E 4 82 41 00
+        E 1 82 4a 00
+        E 3 92 4b 33
+        E 0 92 3f 40
+        E 6 82 3f 00
+        E 0 92 43 32
+        E 8 82 43 00
+        E 0 92 41 36
+        E 5 82 41 00
+        E 3 82 4b 00
+        E 0 92 3f 39
+        E 0 92 43 2b
+        E 5 82 43 00
+        E 1 82 3f 00
+        E 1 92 3e 31
+        E 0 92 45 43
+        E 5 82 3e 00
+        E 2 92 41 39
+        E 0 92 3c 2e
+        E 1 82 45 00
+        E 4 82 3c 00
+        E 2 82 41 00
+        E 1 92 46 46
+        E 0 92 3e 32
+        E 7 82 3e 00
+        E 0 92 3d 39
+        E 8 82 3d 00
+        E 0 92 3e 46
+        E 5 82 3e 00
+        E 1 82 46 00
+        E 1 92 44 47
+        E 0 92 46 42
+        E 7 82 44 00
+        E 0 82 46 00
+        E 0 92 48 40
+        E 0 92 43 3b
+        E 6 82 43 00
+        E 1 82 48 00
+        E 0 92 4a 3d
+        E 1 92 41 3d
+        E 4 82 4a 00
+        E 1 82 41 00
+        E 2 92 4b 3d
+        E 1 92 3f 32
+        E 6 82 3f 00
+        E 0 92 42 3d
+        E 7 82 42 00
+        E 1 92 41 36
+        E 4 82 41 00
+        E 2 82 4b 00
+        E 1 92 3f 39
+        E 1 92 47 33
+        E 5 82 3f 00
+        E 1 82 47 00
+        E 0 92 46 42
+        E 1 92 3e 39
+        E 5 82 46 00
+        E 0 82 3e 00
+        E 2 92 3c 3d
+        E 0 92 3f 39
+        E 0 92 45 39
+        E 5 82 3c 00
+        E 1 82 3f 00
+        E 0 82 45 00
+        E 2 92 43 2b
+        E 1 92 3f 42
+        E 0 92 48 23
+        E 8 92 41 3c
+        E 1 82 43 00
+        E 8 82 48 00
+        E 1 82 3f 00
+        E 0 92 46 3e
+        E 0 92 3e 33
+        E 46 82 41 00
+        E 0 82 46 00
+        E 0 82 3e 00
+        E 26 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {59B76421-22BE-429D-B8E5-0990B86F6920}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1004
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        VELLANE -1 125 0 0 1
+        CFGEDITVIEW 0 3.559028 52 12 0 0 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 0
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 191 1199 3240 2231 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-09-03-15-40.260.mid"
+      >
+    >
+  >
+  <TRACK {9C1EC369-5D23-48FA-9D6C-D9B044D53917}
+    NAME ch2A
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9C1EC369-5D23-48FA-9D6C-D9B044D53917}
+    PERF 0
+    MIDIOUT 33
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 21 49 981 624
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 29.30863507081131
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {D55F1F61-2B1A-419D-B99A-C47C93615432}
+      IID 106
+      NAME "2026-10-08-04-17-42.209.mid [chan 2]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D05864E8-7955-4F1F-A253-62A044ABB080}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {72C46E32-88F4-43C2-ADA7-C03979B0964F}
+        e 74 91 35 48
+        e 16 81 35 00
+        e 0 91 3a 54
+        e 17 81 3a 00
+        e 0 91 3b 47
+        e 17 91 3c 48
+        e 1 81 3b 00
+        e 8 81 3c 00
+        e 33 91 37 43
+        e 9 81 37 00
+        e 0 91 38 48
+        e 8 81 38 00
+        e 0 91 39 3a
+        e 9 81 39 00
+        e 0 91 3a 44
+        e 8 81 3a 00
+        e 0 91 3b 37
+        e 9 81 3b 00
+        e 0 91 3c 3e
+        e 18 81 3c 00
+        e 0 91 3a 47
+        e 7 81 3a 00
+        e 8 91 34 45
+        e 8 81 34 00
+        e 0 91 3a 41
+        e 8 81 3a 00
+        e 0 91 39 43
+        e 9 81 39 00
+        e 0 91 37 41
+        e 8 91 35 47
+        e 1 81 37 00
+        e 6 81 35 00
+        e 9 91 37 40
+        e 8 81 37 00
+        e 0 91 3e 3a
+        e 9 91 3c 40
+        e 1 81 3e 00
+        e 8 81 3c 00
+        e 0 91 3a 45
+        e 7 91 39 48
+        e 1 81 3a 00
+        e 8 81 39 00
+        e 8 91 39 3e
+        e 23 81 39 00
+        e 1 91 3c 40
+        e 8 81 3c 00
+        e 0 91 3a 3e
+        e 9 81 3a 00
+        e 0 91 39 45
+        e 9 81 39 00
+        e 0 91 35 37
+        e 8 81 35 00
+        e 0 91 3a 41
+        e 8 81 3a 00
+        e 1 91 39 41
+        e 27 81 39 00
+        E 41 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {A636E9E6-21E4-47E8-B684-531889B7B062}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 476
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        VELLANE -1 125 0 0 1
+        CFGEDITVIEW 0 2.153361 65 12 0 0 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 0
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 191 1199 3240 2231 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-04-17-42.209.mid"
+      >
+    >
+    <ITEM
+      POSITION 27.08089111808807
+      SNAPOFFS 0
+      LENGTH 34.90194918512822
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {03814068-67C4-4008-B07E-6FBC9460E236}
+      IID 213
+      NAME "2026-10-08-07-16-00.491.mid [chan 2]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {239773DB-D292-45AB-9450-E2065F42994B}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {C90A1984-5C97-4502-8808-DE3E98C05960}
+        e 14 91 3c 3e
+        e 6 91 3e 41
+        e 1 81 3c 00
+        e 7 91 3f 4b
+        e 1 81 3e 00
+        e 7 91 46 48
+        e 1 81 3f 00
+        e 13 91 45 45
+        e 8 81 45 00
+        e 0 91 43 48
+        e 7 81 46 00
+        e 0 91 3f 4f
+        e 22 81 43 00
+        e 0 81 3f 00
+        e 16 91 3c 44
+        e 8 81 3c 00
+        e 0 91 3e 3c
+        e 6 91 3f 43
+        e 1 81 3e 00
+        e 7 81 3f 00
+        e 0 91 43 3d
+        e 15 91 3f 4a
+        e 7 81 43 00
+        e 0 81 3f 00
+        e 0 91 3e 43
+        e 0 91 41 48
+        e 8 81 3e 00
+        e 0 81 41 00
+        e 0 91 3c 48
+        e 0 91 3f 47
+        e 21 81 3f 00
+        e 1 81 3c 00
+        e 53 91 3a 4f
+        e 15 81 3a 00
+        e 0 91 39 3a
+        e 15 81 39 00
+        e 37 91 3b 43
+        e 7 81 3b 00
+        e 0 91 3a 43
+        e 7 81 3a 00
+        e 0 91 3b 3e
+        e 9 81 3b 00
+        e 0 91 39 3c
+        e 0 91 3c 41
+        e 8 81 3c 00
+        e 0 91 3d 4b
+        e 7 81 3d 00
+        e 0 91 3e 47
+        e 30 91 3c 43
+        e 1 81 39 00
+        e 0 81 3e 00
+        e 15 91 3a 4c
+        e 1 81 3c 00
+        e 7 81 3a 00
+        e 0 91 3e 3e
+        e 8 81 3e 00
+        e 0 91 3c 37
+        e 7 91 3a 47
+        e 1 81 3c 00
+        e 7 81 3a 00
+        e 0 91 37 3a
+        e 8 91 34 43
+        e 1 81 37 00
+        e 7 81 34 00
+        e 0 91 36 48
+        e 8 81 36 00
+        e 0 91 37 38
+        e 8 91 38 39
+        e 2 81 37 00
+        e 6 81 38 00
+        e 0 91 39 31
+        e 8 81 39 00
+        e 0 91 3a 44
+        e 8 81 3a 00
+        e 0 91 3c 37
+        e 7 81 3c 00
+        e 0 91 3e 48
+        e 7 81 3e 00
+        e 0 91 3c 43
+        e 8 81 3c 00
+        e 0 91 3e 44
+        e 7 81 3e 00
+        e 0 91 3a 48
+        e 8 81 3a 00
+        e 0 91 37 3e
+        e 7 91 34 44
+        e 1 81 37 00
+        e 8 91 39 41
+        e 1 81 34 00
+        e 33 81 39 00
+        E 11 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {B897D92F-A3ED-46A8-8D36-67F1163E79F7}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 831
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+        VELLANE -1 125 0 0 1
+        CFGEDITVIEW -487.868745 1.810954 57 12 0 0 0 0 0 0.5
+        KEYSNAP 0
+        TRACKSEL 0
+        CFGEDIT 1 1 0 1 0 0 1 1 1 1 1 0.125 191 1199 3240 2231 0 0 0 0 0 0 0 0 0 0.5 0 0 1 64
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-07-16-00.491.mid"
+      >
+    >
+    <ITEM
+      POSITION 61.76351171760114
+      SNAPOFFS 0
+      LENGTH 37.85974148895256
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {D961CE4E-47F5-4F7D-983B-3F439E17EFC1}
+      IID 283
+      NAME "2026-10-09-04-14-15.946.mid [chan 2]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9A8054FB-BB7F-4DB8-8938-292EF604AF19}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {C2A36EFF-A0C9-4EC4-8B1F-C6876A27CF9F}
+        E 14 91 35 32
+        E 0 91 3f 3d
+        E 0 91 39 36
+        E 14 81 39 00
+        E 0 81 3f 00
+        E 1 91 3a 41
+        E 31 81 35 00
+        E 14 81 3a 00
+        E 0 91 3b 44
+        E 14 81 3b 00
+        E 0 91 3c 43
+        E 7 81 3c 00
+        E 31 91 37 3a
+        E 7 91 38 45
+        E 1 81 37 00
+        E 7 91 39 3c
+        E 0 81 38 00
+        E 8 91 3a 45
+        E 0 81 39 00
+        E 7 91 3b 36
+        E 0 81 3a 00
+        E 7 91 3c 3c
+        E 0 81 3b 00
+        E 16 91 3a 45
+        E 0 81 3c 00
+        E 19 81 3a 00
+        E 15 91 38 44
+        E 7 81 38 00
+        E 0 91 3c 41
+        E 8 91 3a 45
+        E 0 81 3c 00
+        E 6 91 38 44
+        E 0 81 3a 00
+        E 8 91 37 4b
+        E 0 81 38 00
+        E 8 81 37 00
+        E 7 91 39 41
+        E 7 91 3f 4f
+        E 1 81 39 00
+        E 6 81 3f 00
+        E 0 91 3e 43
+        E 8 91 3c 3e
+        E 0 81 3e 00
+        E 7 91 3a 47
+        E 1 81 3c 00
+        E 7 81 3a 00
+        E 7 91 3e 4c
+        E 22 91 41 42
+        E 1 81 3e 00
+        E 6 91 3f 41
+        E 1 81 41 00
+        E 6 91 3e 43
+        E 0 81 3f 00
+        E 9 81 3e 00
+        E 0 91 37 45
+        E 7 91 39 41
+        E 0 91 3f 32
+        E 1 81 37 00
+        E 8 91 3e 48
+        E 0 81 3f 00
+        E 0 91 3a 48
+        E 0 81 39 00
+        E 21 81 3a 00
+        E 1 81 3e 00
+        E 8 91 38 48
+        E 14 91 37 43
+        E 0 81 38 00
+        E 9 91 3a 34
+        E 0 81 37 00
+        E 5 91 39 3d
+        E 0 81 3a 00
+        E 8 91 37 3a
+        E 0 81 39 00
+        E 7 91 35 43
+        E 0 81 37 00
+        E 7 91 33 3a
+        E 1 81 35 00
+        E 6 91 35 43
+        E 1 81 33 00
+        E 7 91 34 48
+        E 0 81 35 00
+        E 8 91 35 47
+        E 0 81 34 00
+        E 7 91 3c 3e
+        E 0 81 35 00
+        E 7 91 3a 3a
+        E 1 81 3c 00
+        E 6 91 38 43
+        E 1 81 3a 00
+        E 8 91 36 3d
+        E 0 81 38 00
+        E 7 91 3a 40
+        E 0 81 36 00
+        E 7 91 38 41
+        E 0 81 3a 00
+        E 8 91 36 3c
+        E 0 81 38 00
+        E 7 91 35 3a
+        E 0 81 36 00
+        E 7 91 36 43
+        E 0 81 35 00
+        E 8 91 37 41
+        E 0 81 36 00
+        E 9 81 37 00
+        E 0 91 39 37
+        E 0 91 35 3c
+        E 11 91 3a 48
+        E 1 81 39 00
+        E 46 81 3a 00
+        E 0 81 35 00
+        E 8 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {46A05308-ADBB-4EE2-A201-BD1B6DDDA1BB}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1087
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-09-04-14-15.946.mid"
+      >
+    >
+  >
+  <TRACK {E5D5CDD6-618E-419E-ADD6-7FD7C8FE7397}
+    NAME ch10A
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 10
+    FX 1
+    TRACKID {E5D5CDD6-618E-419E-ADD6-7FD7C8FE7397}
+    PERF 0
+    MIDIOUT 42
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 625 527 876 1008
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+    <ITEM
+      POSITION 3.44824161662936
+      SNAPOFFS 0
+      LENGTH 24.2538968913603
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {FF6FD6FD-07D2-423F-A7D4-43274ACD209F}
+      IID 148
+      NAME "2026-10-08-04-30-23.530.mid [chan 1]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B0CFEC78-BAAE-4262-A167-90A8F776A5A5}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {1FFC6F7D-B8ED-4BFB-9062-1F324B9B5863}
+        E 17 90 2e 64
+        E 13 80 2e 00
+        E 4 90 32 64
+        E 13 80 32 00
+        E 3 90 30 64
+        E 26 80 30 00
+        E 42 90 30 64
+        E 16 80 30 00
+        E 2 90 29 64
+        E 14 80 29 00
+        E 2 90 2e 64
+        E 24 80 2e 00
+        E 10 90 2b 64
+        E 12 80 2b 00
+        E 4 90 2d 64
+        E 13 80 2d 00
+        E 3 90 2e 64
+        E 9 80 2e 00
+        E 7 90 2e 64
+        E 14 80 2e 00
+        E 4 90 30 64
+        E 13 80 30 00
+        E 3 90 32 64
+        E 8 80 32 00
+        E 7 90 2f 64
+        E 14 80 2f 00
+        E 3 90 30 64
+        E 45 80 30 00
+        E 7 90 35 64
+        E 4 80 35 00
+        E 4 90 30 64
+        E 6 80 30 00
+        E 4 90 29 64
+        E 11 80 29 00
+        E 13 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {8D8A4D07-6853-4D88-B2BB-FE855A3AA8A3}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 607
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-04-30-23.530.mid"
+      >
+    >
+    <ITEM
+      POSITION 29.04332011170195
+      SNAPOFFS 0
+      LENGTH 32.53571534206865
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {C6782FEB-EB25-4EC6-87B6-5341BDF1A490}
+      IID 200
+      NAME "2026-10-08-06-53-07.526.mid [chan 1]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DDF42876-0D57-4331-B8AA-CC249986F0D0}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {60B7317E-AFEE-422E-8767-BAFC855409FD}
+        E 11 90 30 64
+        E 4 80 30 00
+        E 4 90 32 64
+        E 4 80 32 00
+        E 3 90 33 64
+        E 6 80 33 00
+        E 2 90 3a 64
+        E 17 80 3a 00
+        E 49 90 30 64
+        E 4 80 30 00
+        E 4 90 33 64
+        E 5 80 33 00
+        E 3 90 35 64
+        E 5 80 35 00
+        E 3 90 36 64
+        E 16 80 36 00
+        E 43 90 37 64
+        E 11 80 37 00
+        E 5 90 34 64
+        E 12 80 34 00
+        E 3 90 2d 64
+        E 16 80 2d 00
+        E 43 90 34 64
+        E 14 80 34 00
+        E 1 90 2d 64
+        E 13 80 2d 00
+        E 3 90 32 64
+        E 182 80 32 00
+        E 4 90 32 64
+        E 13 80 32 00
+        E 1 90 31 64
+        E 20 80 31 00
+        E 4 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {48557841-E632-4EEA-AA1D-32E28693F929}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 787
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-08-06-53-07.526.mid"
+      >
+    >
+    <ITEM
+      POSITION 62.12050393859678
+      SNAPOFFS 0
+      LENGTH 37.85974148895271
+      LOOP 0
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {3030284F-4A1D-42D0-9E38-9054FAAD5136}
+      IID 270
+      NAME "2026-10-09-03-54-41.311.mid [chan 1]"
+      VOLPAN 1 0 1 -1
+      SOFFS 0 0
+      PLAYRATE 0.01 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {41D9552E-0B65-49E6-905E-53131B3272C0}
+      <SOURCE MIDI
+        HASDATA 1 960 QN
+        CCINTERP 32
+        POOLEDEVTS {1B69167B-F4ED-43E0-AC87-E4DE10714876}
+        E 8 90 30 64
+        E 12 80 30 00
+        E 4 90 2e 64
+        E 3 80 2e 00
+        E 4 90 30 64
+        E 5 80 30 00
+        E 3 90 31 64
+        E 11 80 31 00
+        E 4 90 32 64
+        E 12 80 32 00
+        E 3 90 33 64
+        E 21 80 33 00
+        E 39 90 30 64
+        E 10 80 30 00
+        E 5 90 29 64
+        E 12 80 29 00
+        E 3 90 2e 64
+        E 35 80 2e 00
+        E 15 90 35 64
+        E 12 80 35 00
+        E 2 90 2e 64
+        E 11 80 2e 00
+        E 3 90 30 64
+        E 8 80 30 00
+        E 7 90 30 64
+        E 12 80 30 00
+        E 3 90 32 64
+        E 11 80 32 00
+        E 3 90 33 64
+        E 8 80 33 00
+        E 6 90 34 64
+        E 13 80 34 00
+        E 3 90 35 64
+        E 40 80 35 00
+        E 6 90 3a 64
+        E 3 80 3a 00
+        E 5 90 35 64
+        E 5 80 35 00
+        E 2 90 2e 64
+        E 112 80 2e 00
+        E 5 90 2f 64
+        E 26 80 2f 00
+        E 4 90 29 64
+        E 13 80 29 00
+        E 2 90 2e 64
+        E 69 80 2e 00
+        E 11 b0 7b 00
+        CCINTERP 32
+        CHASE_CC_TAKEOFFS 1
+        GUID {B991919C-F12B-4B2D-8152-68612C37D04B}
+        IGNTEMPO 0 120 4 4
+        SRCCOLOR 1045
+        EVTFILTER 0 -1 -1 -1 -1 0 0 0 0 -1 -1 -1 -1 0 -1 0 -1 -1
+      >
+      <EXT
+        ORIGINAL_FILENAME "O:\GrandOrgue\MIDI recordings\2026-10-09-03-54-41.311.mid"
+      >
+    >
+  >
+  <TRACK {8F853B6C-40B2-4055-B4A7-08D789B14859}
+    NAME ch1B
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8F853B6C-40B2-4055-B4A7-08D789B14859}
+    PERF 0
+    MIDIOUT 33
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 21 49 981 624
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaControlMIDI (Cockos)" reacontrolmidi.dll 0 "" 1919118692<56535472636D64726561636F6E74726F> ""
+        ZG1jcu5e7f4AAAAAAAAAANMAAAABAAAAAAAQAA==
+        /////wAAAAAAAAAAAAAAAAkAAAAMAAAAAQAAAP8/AAAAIAAAACAAAAAAAAAiAAAATzpcc29mdHdhcmVcUkVBUEVSXERhdGFcR00ucmVhYmFuawAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAABgAAAE1ham9yAA0AAAAxMDIwMzQwNTA2MDcAAQAAAAAAAAAAAAAAAAoAAAAN
+        AAAAAQAAAAAAAAAAAAAAAAAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8A8D356C-0A5E-42FE-9BAF-B4AAC102227F}
+      WAK 0 0
+    >
+  >
+  <TRACK {B83677CA-EBDA-428F-B479-32C735721305}
+    NAME ch2B
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B83677CA-EBDA-428F-B479-32C735721305}
+    PERF 0
+    MIDIOUT 33
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 21 49 981 624
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+  <TRACK {42CB3F1C-7DD2-4C3D-8E59-B0F973C6A1CB}
+    NAME ch10B
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {42CB3F1C-7DD2-4C3D-8E59-B0F973C6A1CB}
+    PERF 0
+    MIDIOUT 42
+    MAINSEND 1 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+  >
+>
